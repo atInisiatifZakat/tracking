@@ -18,7 +18,7 @@ final class CreateTrackingInput extends Input
     ) {
         $this->params = [
             'type' => $type,
-            'mete' => $meta,
+            'meta' => $meta,
             'source' => $source,
             'source_id' => $sourceId,
         ];
