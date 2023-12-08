@@ -3,17 +3,8 @@
     "description": "Tracking Client API package using in Inisiatif Zakat Indonesia",
     "license": "proprietary",
     "type": "library",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://repo.packagist.com/inisiatif/"
-        },
-        {
-            "packagist.org": false
-        }
-    ],
     "require": {
-        "php": "~8.0.0|~8.1.0",
+        "php": "^8.1",
         "ext-json": "*",
         "symfony/http-client": "^5.4",
         "symfony/http-client-contracts": "^2.5"
