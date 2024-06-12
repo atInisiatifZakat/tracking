@@ -57,6 +57,19 @@ final class TrackingClient
      * @throws ServerExceptionInterface
      * @throws TransportExceptionInterface
      */
+    public function updateTrackingMeta(array $meta): void
+    {
+        $this->executeRequest(
+            Request::create('POST', '/tracking', ['meta' => $meta])
+        );
+    }
+
+    /**
+     * @throws ClientExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws TransportExceptionInterface
+     */
     public function createEvent(CreateEventInput $input): void
     {
         $this->executeRequest($input->request());
