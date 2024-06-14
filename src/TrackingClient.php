@@ -57,10 +57,10 @@ final class TrackingClient
      * @throws ServerExceptionInterface
      * @throws TransportExceptionInterface
      */
-    public function updateTrackingMeta(array $meta): void
+    public function updateTrackingMeta(string $trackingId, array $meta): void
     {
         $this->executeRequest(
-            Request::create('POST', '/tracking', ['meta' => $meta])
+            Request::create('POST', '/tracking/' . $trackingId . '/meta', ['meta' => $meta])
         );
     }
 
